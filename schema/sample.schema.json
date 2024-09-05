@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Example Schema",
+  "description": "サンプルのスキーマ情報です",
+  "type": "object",
+  "properties": {
+    "products": {
+      "type": "array",
+      "description": "商品",
+      "items": {
+        "type": "object",
+        "oneOf": [
+          {
+            "properties": {
+              "type": {
+                "const": "food",
+                "description": "商品種別"
+              },
+              "name": {
+                "type": "string",
+                "description": "商品名"
+              },
+              "price": {
+                "type": "integer",
+                "description": "金額"
+              }
+            },
+            "required": [ "type", "name", "price" ],
+            "additionalProperties": false
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "drink",
+                "description": "商品種別"
+              },
+              "name": {
+                "type": "string",
+                "description": "商品名"
+              },
+              "price": {
+                "type": "integer",
+                "description": "金額"
+              },
+              "capacity": {
+                "type": "integer",
+                "description": "容量"
+              }
+            },
+            "required": [ "type", "name", "price" ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    }
+  }
+}

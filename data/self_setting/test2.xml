@@ -1,0 +1,7 @@
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="../../schema/sample.schema.xsd">
+    <main>
+      <sub1>value1</sub1>
+      <sub2>value2</sub2>
+    </main>
+</root>

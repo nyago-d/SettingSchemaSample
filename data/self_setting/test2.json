@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/sample.schema.json",
+  "products": [
+    {
+      "type": "food",
+      "name": "apple",
+      "price": 100
+    },
+    {
+      "type": "drink",
+      "name": "orange juice",
+      "price": 200,
+      "capacity": 500
+    }
+  ]
+}

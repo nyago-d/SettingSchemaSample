@@ -1,0 +1,21 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/data/from_setting_file/**/*.json"
+            ],
+            "url": "./schema/sample.schema.json"
+        }
+    ],
+    "yaml.schemas": {
+        "./schema/sample.schema.json": [
+          "/data/from_setting_file/**/*.yaml"
+        ],
+    },
+    "xml.fileAssociations": [
+        {
+            "pattern": "**/from_setting_file/*.xml",
+            "systemId": "schema/sample.schema.xsd"
+        }
+    ],
+}
